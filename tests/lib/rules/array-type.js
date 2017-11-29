@@ -75,6 +75,13 @@ ruleTester.run('array-type', rule, {
         message: "Array items must be of type {number}.",
         type: "Literal"
       }]
+    },
+    {
+      code: "let a = [1]; function test () { a.push('2'); }",
+      errors: [{
+        message: "Array items must be of type {number}.",
+        type: "Literal"
+      }]
     }
   ]
 });

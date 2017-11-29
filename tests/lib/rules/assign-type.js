@@ -27,6 +27,12 @@ ruleTester.run('assign-type', rule, {
     },
     {
       code: "let a = ['']; a[0] = '2';"
+    },
+    {
+      code: "this.a = 1; function test () { this.a = '2'; }"
+    },
+    {
+      code: "this.a = 1; this.b = '';"
     }
   ],
 
@@ -61,6 +67,13 @@ ruleTester.run('assign-type', rule, {
     },
     {
       code: "let a = 1; function test () { a = '2'; }",
+      errors: [{
+        message: "Can\'t assign type {string} to {number}.",
+        type: "Literal"
+      }]
+    },
+    {
+      code: "this.a = 1; this.a = '2';",
       errors: [{
         message: "Can\'t assign type {string} to {number}.",
         type: "Literal"
