@@ -1,4 +1,4 @@
-# eslint-plugin-type
+# eslint-plugin-types
 
 A type checking plugin for eslint.
 
@@ -10,13 +10,13 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-type`:
+Next, install `eslint-plugin-types`:
 
 ```
-$ npm install eslint-plugin-type --save-dev
+$ npm install eslint-plugin-types --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-type` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-types` globally.
 
 ## Usage
 

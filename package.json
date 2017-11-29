@@ -1,12 +1,20 @@
 {
   "name": "eslint-plugin-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A type checking plugin for eslint.",
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "types",
+    "type",
+    "typing",
+    "type check"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dissimulate/eslint-plugin-types"
+  },
   "author": "Adam Brooks",
   "main": "lib/index.js",
   "scripts": {
