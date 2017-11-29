@@ -69,7 +69,7 @@ a = 2; // error
 ```
 
 ### array-type
-Arrays items must be a consistent type.
+Array items must be of a consistent type.
 
 Correct:
 ```javascript
